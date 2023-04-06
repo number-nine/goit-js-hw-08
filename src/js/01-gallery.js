@@ -1,13 +1,12 @@
-import { galleryItems } from './gallery-items.js';
-// Change code below this line
-import SimpleLightbox from "simplelightbox";
+// Add imports above this line
+import { galleryItems } from './gallery-items';
 
-import "simplelightbox/dist/simple-lightbox.min.css";
-import '../sass/lightbox.css';
+// Change code below this line
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const galleryContainer = document.querySelector('.gallery');
 createGalleryMarkup(galleryItems, galleryContainer);
-
 initGalleryInstance();
 
 
@@ -27,8 +26,8 @@ function createGalleryMarkup(galleryItems, galleryContainer) {
 }
 
 function initGalleryInstance() {
-    new SimpleLightbox('.gallery .gallery__link', {
-        captionsData: 'alt',
-        captionDelay: 250,
-    });
+  new SimpleLightbox('.gallery .gallery__link', {
+    captionsData: 'alt',
+    captionDelay: 250,
+  });
 }
