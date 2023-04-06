@@ -16,6 +16,6 @@ player.on(
 );
 
 function restorePlayerTime() {
-    const restoredFormData = localStorage.getItem(STORAGE_KEY);
-    return restoredFormData ? restoredFormData : 0;
+  const restoredFormData = localStorage.getItem(STORAGE_KEY);
+  return restoredFormData ? restoredFormData : 0;
 }
